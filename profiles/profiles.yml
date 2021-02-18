@@ -1,0 +1,14 @@
+dremio:
+  outputs:
+    managed:
+      type: dremio
+      threads: 2
+      driver: "{{ var('DREMIO_DRIVER') }}"
+      host: "{{ var('DREMIO_HOST') }}"
+      port: "{{ var('DREMIO_PORT') }}"
+      environment: "{{ var('DREMIO_ENVIRONMENT') }}"
+      database: "{{ var('DREMIO_DATABASE') }}"
+      schema: "{{ var('DREMIO_SCHEMA') }}"
+      user: "{{ var('DREMIO_USER') }}"
+      password: "{{ var('DREMIO_PASSWORD') }}"
+  target: managed
