@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: stg
+    tables:
+      - name: sirene_stg
+        identifier: '"minio-datalake"."datalake-bucket"."stg"."siren"'

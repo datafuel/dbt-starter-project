@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('stg', 'sirene_stg') }}
